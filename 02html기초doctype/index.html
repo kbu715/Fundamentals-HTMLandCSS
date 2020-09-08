@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- 브라우저야 이문서는 html5버전으로 작성된 문서야 그러니까 그에 맞춰서 오류없이 잘 렌더링ㅎ해주세용!-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- 내가 보는 화면: viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <meta name="author" content="강바울">
+        <meta name="keywords" content="강바울, 웹개발, 고수">
+        <meta name="description" content="~~~~">
+        <title>킴버그강의</title>
+        <link rel="stylesheet" href="styles.css"> <!-- link:css 자동완성-->
+        <style>
+            h1 {
+                color: red
+            }
+        </style>
+    </head>
+    <body>
+        <h1>제목</h1>       
+        <script> 
+        //script 태그는 body 태그 안에서도 마지막에 써주는게 좋다. 
+            var h1 = document.querySelector('h1');
+            h1.addEventListener('click', function(event){
+                event.target.textContent = event.target.textContent === '제목' ? '안녕' : '제목';
+            })
+
+        </script> 
+    </body>
+</html>

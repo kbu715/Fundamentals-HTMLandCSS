@@ -1,0 +1,33 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Form - Input</title>
+  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+  <!-- 여기에 코드를 작성하세요 ❤️ -->
+  <form action="#" method="GET">
+      <label for="pw">비밀번호</label>
+    <input type="password" id="pw" placeholder="비밀번호를 입력하세요"
+     minlength="5" maxlength="13" />
+    <input type="file" accept=".png, .jpg"/>
+    <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="전화번호 (***-****-****)" />
+    <button>submit</button>
+  </form>
+
+<!-- radio, checkbox -->
+<!-- name 속성을 맞춰줘야 둘다 선택되지 않는다. -->
+<!-- input type="radio" 을 쓸때 value 속성을 반드시 쓴다.왜냐, name=value 형식으로 서버에 보낼거기 때문에-->
+  <input type="radio" name="subscription" value="true" id="subscribed" />  
+  <label for="subscribed">구독중</label>
+  <input type="radio" name="subscription" value="false" id="unsubscribed" />
+  <label for="unsubscribed">미구독</label>
+
+  <input type="checkbox" />
+</body>
+</html>
