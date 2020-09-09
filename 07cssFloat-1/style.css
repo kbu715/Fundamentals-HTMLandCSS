@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    background-color: black;
+  }
+  /* 앵커에 패딩을 줘야 앵커 전체 영역이 넓어져서 클릭하기 쉽다 */
+  a { 
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+  }
+  
+  /* ▼ WHERE YOUR CODE BEGINS */
+
+  ul {
+      background-color: #fff;
+      border-bottom: 1px solid #8492a6;
+      padding: 0;
+  }
+  .tab-menu::after {
+    content: '';
+    display: block;
+    clear: left;
+  }
+
+  .tab-menu-item {
+      list-style-type: none;
+      float: left;
+      margin-right: 25px;
+      
+  }
+
+  .tab-menu-item a {
+      padding: 20px 16px;
+      display: block;
+  }
+
+  .tab-menu-item.selected {
+    border-bottom: 4px solid #0066ff;
+  }
+
+  .tab-menu-item.selected a {
+      color : #0066ff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ul {
+      list-style-type: none;
+      padding: 0;
+  }
+
+  .tab-menu {
+    max-width: 540px;
+    border-bottom: 1px solid #E5EAEF;
+    background-color: #fff;
+  }
+
+  .tab-menu-item {
+      float: left;
+      margin-right: 16px;
+  }
+
+  .tab-menu::after {
+      content: '';
+      display: block;
+      clear: left;
+  }
+
+  .tab-menu-item a {
+      padding : 16px 20px;
+      display: block;
+  }
+
+  .tab-menu-item.selected a {
+      color: #2860E1;
+      font-weight: 500;
+      border-bottom: 4px solid #2860E1;
+  } */
