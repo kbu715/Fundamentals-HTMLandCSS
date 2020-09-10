@@ -137,3 +137,72 @@ ex) 1vh 1% viewport height
 
 	/* css 선언 */
 }
+
+
+
+
+
+
+
+flexbox
+
+
+1.나, 플렉스박스 쓸거임
+
+2.가로정렬 세로정렬?
+
+3.무조건 한줄 안에 다정렬?
+
+4.씐나는 플렉스박스 파티타임!
+
+
+
+1.정렬하고자 하는 요소를 감싸는 부모에게 
+display:flex
+
+
+2.flex-direction : row|column
+
+main axis
+cross axis
+
+
+
+3. flex-wrap : nowrap
+
+감싸지 않고 자식의 사이즈를 줄여서라도 한줄로 정렬해버린다.
+
+
+4.
+
+main axis : justify-content
+		flex-start | flex-end | center | space-between | space-around
+
+cross axis : align-items | align-content
+
+
+*align-items는 하나의 cross axis를 기준으로 정렬할때
+
+그런데 flex-wrap:wrap일 경우 어떤 경우엔 
+
+flex 라인이 두개가 생긴다.
+
+이런경우에 align-content를 쓸 수 있다
+
+그러면 flex 라인이 전체적으로 1개가 생겨서 그걸 기준으로 정해진다.
+
+
+이렇게 복잡하게 생각안하고
+
+그냥
+
+선 align-items 후 align-content
+
+
+order!!!
+
+order이 진짜 쩌는것
+
+order:1
+
+순서를 바꿔버린다.
