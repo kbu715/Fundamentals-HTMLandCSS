@@ -206,3 +206,9 @@ order이 진짜 쩌는것
 order:1
 
 순서를 바꿔버린다.
+
+
+
+Media Query
+
+mobile부터 하는게 좋다.
