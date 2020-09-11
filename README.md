@@ -397,3 +397,77 @@ or,
 	animation-direction: alternate(번갈아가면서)
 }
 
+
+
+
+
+overflow
+
+visible | hidden | auto | scroll
+
+
+auto/scroll 거의비슷
+
+
+
+
+
+transform (진정한 css 장인들의 세계)
+
+
+1. translate() - translateX, translateY 
+다른 요소들에게 영향을 안준다. 그대로있다. 다른요소들이 translate 되기전 위치를 알고있다.
+eX) translate(100%, 100%) 이라면 딱 자기 사이즈 만큼 움직인다.
+2. rotate()
+ex) rotate(45deg)
+3. scale()
+ex) scale(0.5) 사이즈가 반으로 줄어든다.
+
+이 세개만 자주 쓴다.
+
+
+
+transform은 자주 사용하진 않는다. 그나 transform: translate(-50%, -50%) : 가운데 배치할때
+
+
+visibility : 그냥 보이지만 않게 자리에는 존재한다. visible | hidden
+
+display:none 은 존재하지 않게 한다!!!
+
+
+
+
+Box Shadow 요소에 그림자를 줄때 사용하는 property
+
+
+| h-offset v-offset blur spread color | 이 순서대로 꼭 적어줘야 한다.
+
+휴먼랭기지로 말하자면
+
+x, y, 흐린정도 그림자사이즈, 색상
+
+
+
+요즘대세
+
+neumorphism.io
+
+
+
+
+
+
+grid system
+
+container 
+column
+gutter
+
+
+
+
+bootstrap
+
+container -> row -> col 이 순서대로 감싼다.
+
+col-12 col-md-6 col-lg-4 col-xl-3
