@@ -1,0 +1,156 @@
+.like-button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* ▼ WHERE YOUR CODE BEGINS */
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+  }
+
+  body {
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .sr-only {
+      /* display: none; screen reader로 없는걸로 인식*/ 
+      position: absolute;
+      /* 집을 나간애로 인식 */
+
+      z-index: -100; 
+      /* 저멀리 보내버리기 */
+      width: 1px;
+      height: 1px;
+      /* width나 height를 0으로 주면 스크린리더가 역시 없는걸로 인식 */
+      overflow: hidden;
+      opacity: 0;
+  }
+
+  .card {
+    width: 840px;
+    display: flex;
+    padding: 24px;
+}
+
+  .card-image {
+      width: 300px;
+      height: 200px;
+      border-radius: 6px;
+      background-image: url('./assets/img-house.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      overflow: hidden;
+      margin-right: 24px;
+      position: relative;
+  }
+
+
+  .card-image .like-button {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: none;
+      background-image: url('./assets/icon-favorite.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 24px 24px;
+      cursor: pointer; 
+      /* 커서를 손가락으로 바꾸기 */
+      position: absolute;
+      top: 12px;
+      left: 12px;
+  }
+  .plus-badge {
+      display: inline-block;
+      padding: 1px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-right: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.4285714286;
+      color: #fff;
+      background-color: #92174D;
+  }
+
+  .property-type span {
+      font-size: 16px;
+      line-height: 1.25;
+      color: #7d858f;
+  }
+
+  .property-rate {
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.property-rate strong {
+    color: #151b26;
+    font-weight: 400;
+}
+
+.property-rate span {
+    color: #7d858f;
+}
+
+.property-rate::before {
+    content: '';
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./assets/icon-star.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #151b26;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.card-content {
+    flex-grow: 1;
+    /* 정수만 올수있다. */
+    /* 남은공간 있으면 다 차지하게 해줘 */
+    /* flex-grow: 0이면 절대로 키우지않겠다 */
+}
+
+.property-detail {
+    font-size: 14px;
+    line-height: 1.1428571429;
+    color: #7d858f;
+}
+
+.property-detail dd span::after {
+    content: '·';
+    margin: 0 8px;
+    /* 가상요소는 기본적으로 inline이라서 margin top bottom은 주면 안되지만
+    양옆으로는 가능하다. */
+
+}
+
+.property-detail dd span:last-child::after {
+    content: '';
+    margin: 0;
+}
+
+.property-detail div:first-child {
+    margin-bottom: 8px;
+}
+

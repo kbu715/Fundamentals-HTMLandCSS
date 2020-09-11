@@ -212,3 +212,188 @@ order:1
 Media Query
 
 mobile부터 하는게 좋다.
+
+
+
+
+
+
+
+
+
+
+typography 타이포그래피
+
+
+font-size
+
+단위 px em rem
+
+px : 절대단위
+
+em rem : 상대 단위
+
+em : 실제로 적용된 폰트 사이즈(자연스럽게 먹은 폰트사이즈)
+
+사람들이 잘안씀..
+
+
+rem : root em 
+
+여기서 root=html
+
+html {
+	font-size: 20px;
+}
+
+p {
+	font-size: 3rem;
+}
+
+최종으로 그럼 60px이 된다.
+
+
+line-height : em을 많이 사용한다.
+
+em 단위를 생략해주는게 관례이다
+
+line-height : 1.5;
+
+
+letter-spacing : 자간, px, em 사용한다. 보통은 em 많이 사용한다.
+
+
+
+font-family : "Poppins", sans-serif;
+
+--> 파핀스 없으면 sans-serif 체 중에 아무거나 써줘!!
+
+
+font-weight  : 폰트의 굵기, 무조건 100씩 커진다.
+
+ligh: 300
+
+regular : 400
+
+bold : 700
+
+400,700 \중요
+
+color : #0066ff; ---- 방식이 세가지가 있다.
+
+1. #0066FF;
+2.rgba(0,102,255,1) 투명도까지
+3.그냥 blue
+
+
+
+text-align : left | right | center;
+
+
+text-indent : (들여쓰기) 10px;
+
+text-transform : none | capitalize | uppercase | lowercase
+
+capitalize : 모든 단어의 첫글자 대문자로
+
+
+
+
+text-decoration : a태그 쓸때 text-decoration : none; 밑줄없앨때 가장 많이 쓴다.
+
+font-style : italic 이것만 기억하면된다.
+
+
+
+Webfont
+
+fonts.google.com
+
+
+
+transition!!!
+
+property	duration [timing-function] [delay] ([]: 생략가능한 속성)
+
+*timing-function : 변하는 속도에 대한 설정
+
+ease-in | ease-out | ease-in-out | cubic-bezier()
+
+
+ex) transition: font-size 2500ms ease-in 1000ms; 
+//1초후에 2.5초동안 글자 크기 ease-in 트랜지션
+
+ex transition: all 1500ms // 모든 속성을 1.5초동안
+
+ex)transition: font-size 1000ms ease-out, background-color 2000ms cubic-bezier(0.08, 0.57, 0.97, -0.78) 1000ms;
+이렇게 두개의 속성에대해 따로 설정 가능
+
+
+
+background-color: url();
+
+background-repeat: no-repeat;
+
+background-size: contain | cover | custom
+
+contain: 요소안에 이미지가 다 들어가게
+
+cover: 요소안이 꽉차게 이미지가 잘리더라도
+
+
+background-position: center center; (x, y 축으로 어느지점에)
+
+
+
+가상요소 ::after ::before는 기본적으로 inline
+
+
+
+
+
+
+애니메이션부터
+
+@keyframes
+
+
+@keyframes name {
+
+	from {
+		/* Rules */
+	}
+
+	to {
+		/* Rules */
+	}
+}
+
+
+or,
+
+@keyframes name {
+
+	0% {
+		/* Rules */
+	}
+
+	50% {
+		/* Rules */
+	}
+	10 0% {
+		/* Rules */
+	}
+}
+
+
+
+
+.box {
+	animation-name: name;
+	animation-duration: 2000ms;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1000ms;
+	animation-iteration-count:3 | infinite;
+	animation-direction: alternate(번갈아가면서)
+}
+
