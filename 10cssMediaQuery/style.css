@@ -83,6 +83,16 @@
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+    transition: all 250ms ease-in-out;
+}
+
+.landing-link:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.landing-link:active {
+  transform: translateY(-1%); 
 }
 
 .landing-title {
